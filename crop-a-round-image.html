@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>图片上传剪切下载</title>
+  <link rel="stylesheet" href="css/cropper.min.css">
+  <link rel="stylesheet" href="css/column.cropper.css"/>
+</head>
+<body>
+    <div class="column-cover-container">
+        <input type="file" id="cropper-upload-img" title="请选择封面图片"/>
+        <div id="cropper-result" class="column-cover"></div>
+    </div>
+    <div id="cropper-popup" class="cropper-popup-style">
+        <div class="cropper-wrapper">
+            <div class="cropper-header">
+                <p class="cropper-header-title">剪切图片</p>
+                <a class="close-btn" id="cropper-close-btn">X</a>
+            </div>
+            <div class="container">
+                <img id="cropper-image" src="" alt="Picture">
+            </div>
+            <div class="cropper-footer">
+                <button type="button" class="do-crop-btn" id="crop-button">Crop</button>
+            </div>
+        </div>
+    </div>
+    <button id="column-download">下载</button>
+
+  <!-- Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/cropper.min.js"></script>
+  <script src="js/cropperimg.js"></script>
+</body>
+</html>
